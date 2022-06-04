@@ -1,0 +1,503 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Glegoo", serif;
+  color: white;
+}
+body,
+html {
+  width: 100%;
+  height: max-content;
+}
+::selection {
+  background-color: pink;
+}
+
+.entire-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+}
+.main-container {
+  width: 95%;
+  background-color: white;
+}
+.navbar-cont {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+.title-nav {
+  font-size: 1.7em;
+  text-decoration: none;
+  color: white;
+}
+.nav-item {
+  margin-left: 10%;
+  font-size: 1.2em;
+}
+.hero-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  width: 95%;
+  height: 90vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-name {
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  position: absolute;
+  top: 30%;
+  justify-content: center;
+}
+.sub-cont {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+.message {
+  font-size: 1.3em;
+  width: 60%;
+  background-color: #303030;
+  padding: 2%;
+  text-align: center;
+}
+.project-title {
+  color: black;
+  font-size: 3em;
+  font-weight: bold;
+  width: 60%;
+  text-align: center;
+}
+.projects-cont {
+  width: 100%;
+  height: max-content;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.projects a {
+  flex-basis: 30%;
+  width: 30%;
+  height: inherit;
+  margin: 0 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: #303030;
+  text-decoration: none;
+}
+.projects a:hover {
+  color: grey;
+}
+.projects a p {
+  margin: 10px;
+}
+.project-item {
+  flex-basis: 30%;
+  width: 100%;
+  height: 30vh;
+}
+.socials-cont {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.socials {
+  flex-basis: 30%;
+  color: black;
+}
+
+.socials a {
+  color: black;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.socials a:hover {
+  font-size: 1.3em;
+  color: grey;
+}
+@media screen and (max-width: 900px) {
+  .message {
+    font-size: 1em;
+  }
+  .projects-cont {
+    height: max-content;
+  }
+  .projects {
+    height: max-content;
+  }
+  .projects a {
+    height: inherit;
+    flex-basis: 45%;
+    margin-top: 10px;
+  }
+  .projects a p {
+    font-size: 0.8em;
+  }
+  .socials-cont {
+    text-align: center;
+  }
+  .socials {
+    font-size: 0.9em;
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .message {
+    font-size: 0.8em;
+  }
+  .project-title {
+    font-size: 2em;
+  }
+  .projects-cont {
+    width: 100%;
+    height: max-content;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .project-item {
+    width: 100%;
+    object-fit: cover;
+  }
+  .projects a {
+    flex-basis: 100%;
+    width: 30%;
+    height: inherit;
+    margin: 0 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+  }
+  .projects a p {
+    font-size: 0.8em;
+  }
+  .socials-cont {
+    text-align: center;
+  }
+  .socials {
+    font-size: 0.6em;
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .message {
+    font-size: 0.7em;
+  }
+  .project-title {
+    font-size: 2em;
+  }
+  .projects-cont {
+    width: 100%;
+    height: max-content;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .project-item {
+    width: 100%;
+    object-fit: cover;
+  }
+  .projects a {
+    flex-basis: 100%;
+    width: 30%;
+    height: inherit;
+    margin: 0 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+  }
+  .projects a p {
+    font-size: 0.8em;
+  }
+  .socials-cont {
+    text-align: center;
+  }
+  .socials {
+    font-size: 0.6em;
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .entire-container {
+    width: 100%;
+  }
+  .main-container {
+    width: 100%;
+  }
+  .message {
+    font-size: 0.6em;
+  }
+  .project-title {
+    font-size: 2em;
+  }
+  .projects-cont {
+    width: 100%;
+    height: max-content;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .project-item {
+    width: 100%;
+    object-fit: cover;
+  }
+  .projects a {
+    flex-basis: 100%;
+    width: 30%;
+    height: inherit;
+    margin: 0 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+  }
+  .projects a p {
+    font-size: 0.8em;
+  }
+  .socials-cont {
+    text-align: center;
+  }
+  .socials {
+    font-size: 0.6em;
+    flex-basis: 100%;
+  }
+}
+/* -------------Project CSS-------- */
+
+.project-hero-container {
+  background-color: black;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-hero {
+  font-size: 3em;
+}
+.project-picture-cont {
+  display: flex;
+  justify-content: center;
+}
+.project1-picture {
+  width: 70%;
+  height: 80vh;
+  margin-top: 5%;
+  background: url(https://via.placeholder.com/900x500);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.project2-picture {
+  width: 70%;
+  height: 80vh;
+  margin-top: 5%;
+  background: url(https://via.placeholder.com/900x500);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.project3-picture {
+  width: 70%;
+  height: 80vh;
+  margin-top: 5%;
+  background: url(https://via.placeholder.com/900x500);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.description-cont {
+  display: flex;
+}
+.description {
+  margin: 3% 5%;
+}
+.description,
+.description p,
+.description ul li {
+  color: black;
+}
+.info {
+  margin-top: 5%;
+}
+.info,
+.info h4,
+.info p {
+  color: black;
+}
+.carousel-main-cont {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+}
+.carousel-img {
+  max-height: 70vh;
+  object-fit: contain;
+}
+.caption-carousel {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 800px) {
+  .block-party-picture {
+    height: 60vh;
+  }
+  .goap-picture {
+    height: 60vh;
+  }
+  .procedural-terrain-picture {
+    height: 60vh;
+  }
+  .description,
+  .description p,
+  .description ul li {
+    flex-basis: 60%;
+  }
+  .info,
+  .info h4,
+  .info p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project-hero {
+    font-size: 2em;
+  }
+  .block-party-picture {
+    height: 40vh;
+  }
+  .goap-picture {
+    height: 40vh;
+  }
+  .procedural-terrain-picture {
+    height: 40vh;
+  }
+  .description,
+  .description p,
+  .description ul li {
+    flex-basis: 60%;
+    font-size: 0.9em;
+    margin-right: 20px;
+  }
+  .info,
+  .info h4,
+  .info p {
+    font-size: 0.9em;
+  }
+  .carousel-main-cont {
+    height: 50vh;
+  }
+}
+
+/* -------------about   */
+
+.about-main-cont {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+.about-cont {
+  display: flex;
+  background-color: #303030;
+  width: 80%;
+}
+.pfp-picture {
+  width: 20%;
+  height: 50vh;
+  margin-top: 5%;
+  background: url(https://via.placeholder.com/300);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.about h4 {
+  font-size: 2em;
+}
+.about h4,
+.about div {
+  text-align: center;
+  background-color: black;
+  width: max-content;
+  margin: 1% auto;
+  padding: 2%;
+}
+
+.about p {
+  width: 70%;
+  background-color: black;
+  margin: 1% auto;
+  padding: 3%;
+}
+
+@media screen and (max-width: 800px) {
+  .pfp-picture {
+    width: 30%;
+  }
+  .about p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pfp-picture {
+    width: 40%;
+  }
+  .about-cont {
+    width: 90%;
+  }
+  .about p {
+    font-size: 0.7em;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pfp-picture {
+    width: 50%;
+  }
+  .about-cont {
+    width: 100%;
+  }
+  .about p {
+    font-size: 0.7em;
+    width: 90%;
+  }
+}
+
+/* -----------------footer----- */
+footer {
+  background-color: #3d3d3d;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 0.7em;
+  }
+}
